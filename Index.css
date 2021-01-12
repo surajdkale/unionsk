@@ -1,0 +1,35 @@
+body
+{
+	background: black;
+}
+#div1{
+	height: 500px;
+	width: 850px;
+	background: white;
+	border-color: 1px solid black;
+	border-radius: 25px;
+	position: relative;
+	left: 15%;
+	top: 10%;
+
+	line-height: 10px;
+}
+h1{
+	color: grey;
+	font-family: vintage;
+	font-weight: 600;
+	position: relative;
+	padding-top: 5%;
+	font-size: 65px;
+}
+
+footer
+{
+	position: relative;
+
+	left: -30%;
+}
+#td{
+	line-height: 30px;
+
+}
