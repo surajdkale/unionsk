@@ -1,0 +1,361 @@
+
+ 
+   
+  
+  <html>
+    <body>
+    <hr>
+    <h3>Program 1ST -DESKTOP</h3>
+    <hr>
+        <?php
+        
+        // here we creating a class to modify some essentioal data...
+        class desktop
+        {
+            public $RAM;
+            public $ROM;
+            public $Graphic_Card;
+            public $Processor;
+            
+        
+        // Now we create a function which stores the values of classes into it..
+        function RAM($RAM)
+        {
+            $this->ram=$RAM;
+        }
+               function get_RAM()
+        {
+            return $this->ram;
+        }
+        function ROM($ROM)
+        {
+            $this->rom=$ROM;
+        }
+            function get_ROM()
+        {
+            return $this->rom;
+        }
+        function Graphic_card($Graphic_card)
+        {
+            $this->graphic_card=$Graphic_card;
+        }
+            function get_Graphic_card()
+        {
+            return $this->graphic_card;
+        }
+        function Processor($Processor)
+        {
+            $this->processor=$Processor;
+        }
+               function get_Processor()
+        {
+            return $this->processor;
+        }
+ 
+        }
+        
+
+        $RAM= new desktop();
+        $ROM= new desktop();
+        $Graphic_card= new desktop();
+        $Processor= new desktop();
+        // Now we add the values..
+        $RAM->RAM('4 GB LPDDR4');
+        $ROM->ROM('1TB HDD');
+        $Graphic_card->Graphic_card('NVIDA 1080TI');
+        $Processor->Processor('AMD RYZEN 3 3200U');
+        //Now we simply use echo() to print the values...
+        echo " DESKTOP FEATURES:<br>";
+        echo "RAM : ".$RAM->get_RAM();
+        echo "<br>";
+        echo "ROM : ".$ROM->get_ROM();
+        echo "<br>";
+        echo "Graphic Card : ". $Graphic_card->get_Graphic_card();
+        echo "<br>";
+        echo "Processor : ".$Processor->get_processor();
+        
+        ?>
+        <hr>
+        <h3>Program 2ND -FAMILY</h3>
+        <hr>
+        <?php
+        //here we now take a family names of each person and its designations....
+class family_members
+{
+  public $Me;
+  public $Father;
+  public $Mother;
+  public $Sister;
+ // Now we simply creating a functions 
+ function Me($ME)
+ {
+   $this->me=$ME;
+ }
+  function get_Me()
+ {
+  return $this->me;
+ }
+ function Father($FATHER)
+  {
+   $this->father=$FATHER;
+  }
+  function get_Father()
+ {
+  return $this->father;
+  }
+ function Mother($MOTHER)
+ {
+  $this->mother=$MOTHER;
+ }
+  function get_Mother()
+ {
+  return $this->mother;
+ }
+ function Sister($SISTER)
+ {
+  $this->sister=$SISTER;
+ }
+  function get_Sister()
+ {
+  return $this->sister;
+ }
+
+}
+ // Now we creating some variables ..
+ $ME= new family_members();
+ $FATHER= new family_members();
+ $MOTHER= new family_members();
+ $SISTER= new family_members();
+ 
+ // Now we declaring the values in it...
+ $ME->Me('Rohit');
+ $FATHER->Father('Vinay');
+ $MOTHER->Mother('Reshma');
+ $SISTER->Sister('Rutuja');
+ 
+ //Now we printing the output....
+ 
+ echo "My name is ".$ME->get_Me();
+ echo "<br>";
+ echo "My Father name is ".$FATHER->get_Father();
+ echo "<br>";
+ echo "My Mother name is ".$MOTHER->get_Mother();
+ echo "<br>";
+ echo "My Sister name is ".$SISTER->get_Sister();
+
+?>
+<hr>
+<h3>Program 3RD -VEHICLES TYPES</h3>
+<hr>
+<?php
+
+  class vehicle
+  {
+   public $BMW;
+   public $INNOVA;
+   public $THAR;
+   public $NANO;
+   // For BMW
+   function bmw($BMW)
+   {
+    $this->bmw=$BMW;
+    }
+   function get_bmw()
+   {
+    return $this->bmw;
+    }
+    //FOR INNVOA
+    function innova($INNOVA)
+    {
+     $this->innova=$INNOVA;
+     }
+    function get_innova()
+    {
+     return $this->innova;
+     }
+    //FOR THAR
+    function thar($THAR)
+    {
+     $this->thar=$THAR;
+     }
+    function get_thar()
+    {
+     return $this->thar;
+     }
+    //FOR NANO
+    function nano($NANO)
+    {
+     $this->nano=$NANO;
+     }
+    function get_nano()
+    {
+    return $this->nano;
+    }
+   }
+    
+    //assigning values..
+    //For BMW
+    $BMW=new vehicle();
+    $BMW->bmw('BMW');
+    //FOr innova
+    $INNOVA=new vehicle();
+    $INNOVA->innova('INNOVA');
+    //FOR thar
+    $THAR=new vehicle();
+    $THAR->thar('THAR');
+    //FOR Nano
+    $NANO=new vehicle();
+    $NANO->nano('NANO');
+    
+    //Printing the output...
+    echo $BMW->get_bmw()." Is The Speed Car";
+    echo "<br>";
+    echo $INNOVA->get_innova()."Is The Family-Travel Car";
+    echo "<br>";
+    echo $THAR->get_thar()."Is The Offroad+Onroad Car";
+    echo "<br>";
+    echo $NANO->get_nano()."Is The Entry-Level Car";
+    
+    
+    ?>
+  <hr>
+  <h3>Program 4TH -BASE_WATTS</h3>
+  <hr>
+  <?php
+  
+    class hometheater
+    {
+     public $XAOMI;
+     public $REALME;
+     public $SONY;
+     public $ZEBRONIC;
+     //For xaomi
+     function xaomi($XAOMI)
+     {
+       $this->xaomi=$XAOMI;
+      }
+      function get_xaomi()
+      {
+       return $this->xaomi;
+       }
+      //For Realme
+      function realme($REALME)
+      {
+       $this->realme=$REALME;
+       }
+       function get_realme()
+       {
+        return $this->realme;
+        }
+       //For SONY
+       function sony($SONY)
+       {
+         $this->sony=$SONY;
+         }
+        function get_sony()
+        {
+         return $this->sony;
+         }
+         //FOR Zebronic
+        function zebronic($ZEBRONIC)
+        {
+         $this->zebronic=$ZEBRONIC;
+         }
+        function get_zebronic()
+        {
+         return $this->zebronic;
+        }
+      } 
+         //assigning values
+       $XAOMI= new hometheater();
+       $XAOMI->xaomi('70-Watts');
+       $REALME= new hometheater();
+       $REALME->realme('100-Watts');
+       $SONY=new hometheater();
+       $SONY->sony('75-watts');
+       $ZEBRONIC=new hometheater();
+       $ZEBRONIC->zebronic('65-watts');
+       
+       //Printing ...
+       echo "This is Xaomi its have : ".$XAOMI->get_xaomi();
+       echo "<br>";
+       echo "This is Realme its have : ".$REALME->get_realme();
+       echo "<br>";
+       echo "This is Sony its have : ".$SONY->get_sony();
+       echo "<br>";
+       echo "This is Zebronic its have : ".$ZEBRONIC->get_zebronic();
+         ?>
+         <hr>
+         <h3>Program 5TH -MOBILE PRIZES</h3>
+         <hr>
+         <?php
+         class mobiles
+    {
+     public $XAOMI;
+     public $REALME;
+     public $SONY;
+     public $ONEPLUS;
+     //For xaomi
+     function xaomi($XAOMI)
+     {
+       $this->xaomi=$XAOMI;
+      }
+      function get_xaomi()
+      {
+       return $this->xaomi;
+       }
+      //For Realme
+      function realme($REALME)
+      {
+       $this->realme=$REALME;
+       }
+       function get_realme()
+       {
+        return $this->realme;
+        }
+       //For SONY
+       function sony($SONY)
+       {
+         $this->sony=$SONY;
+         }
+        function get_sony()
+        {
+         return $this->sony;
+         }
+         //FOR OnePlus
+        function oneplus($ONEPLUS)
+        {
+         $this->oneplus=$ONEPLUS;
+         }
+        function get_oneplus()
+        {
+         return $this->oneplus;
+        }
+      } 
+         //assigning values
+       $XAOMI= new mobiles();
+       $XAOMI->xaomi('above 5000');
+       $REALME= new mobiles();
+       $REALME->realme('Above 6000');
+       $SONY=new mobiles();
+       $SONY->sony('Above 35,000');
+       $ONEPLUS=new mobiles();
+       $ONEPLUS->oneplus('Above 30,000');
+       
+       //Printing ...
+       echo "This is Xaomi its have Intial Price : ".$XAOMI->get_xaomi();
+       echo "<br>";
+       echo "This is Realme its have Intial Price : ".$REALME->get_realme();
+       echo "<br>";
+       echo "This is Sony its have Intial Price : ".$SONY->get_sony();
+       echo "<br>";
+       echo "This is Oneplus its have Intial Price : ".$ONEPLUS->get_oneplus();
+         ?>
+         <hr>
+         <h4><b>NOTE-: </b>All above code is non-copied or copycat.</h4>
+         <center><h6>Coded By -: Suraj Dhanaji Kale</h6></center>
+         <hr>
+    </body>
+    </html>
+    
+    
